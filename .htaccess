@@ -1,0 +1,57 @@
+RewriteEngine On
+
+
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* index.php?query=$0 [PT,L,QSA]
+
+
+
+
+#RewriteCond %{REQUEST_URI} !^/actions
+#RewriteRule ^(.*)$ index.php?/$1 [QSA,L]
+
+
+#Options +FollowSymLinks
+
+#RewriteEngine on
+
+#RewriteRule index index.php [NC]
+#RewriteRule list index.php/index [NC]
+
+
+
+
+
+
+
+
+
+
+
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^ index.php [QSA,L]
+
+#RewriteRule ^([a-zA-Z0-9-/]+)$ index.php?page=$1
+#RewriteRule ^([a-zA-Z0-9-/]+)/$ index.php?page=$1
+
+#RewriteRule ^([a-zA-Z0-9-/]+)\/watch/$ index.php?page=watch&watch=$
+
+#RewriteRule (.*)/$ index.php?page=$1?watch=$2 [QSA,L,E=PATH_INFO:/$1]
+
+#RewriteRule ^([a-zA-Z0-9-/]+)$ index.php?page=$1
+#RewriteRule ^([a-zA-Z0-9-/]+)\/watch$ index.php?page=watch?watch=$1
+#RewriteRule ^([a-zA-Z0-9-/]+)\/watch/$ index.php?page=watch?watch=$1
+
+#RewriteRule ^([a-zA-Z0-9-/]+)/watch index.php?page=list
+#RewriteRule ^([a-zA-Z0-9-/]+)/watch/$ index.php?page=watch?watch=$1
+#RewriteRule ^([a-zA-Z0-9-/]+)/watch$ index.php?page=watch?watch=$1
+#RewriteRule watch/$ index.php?page=watch?watch=$1 [NC]
+
+
+#/watch -> list
+#/watch/adventure-time
+#/watch/adventure-time/s01e01?d=pl
