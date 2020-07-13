@@ -22,7 +22,7 @@ if($sql = $CORE->Database->prepare("SELECT e.title, e.video, e.avatar as avatar,
 			    {
 			        echo '				<section class="watch-list-box">
 					<section class="watch-list-card-content-box">
-						<div class="list-card-avatar" style="background: url(http://localhost/galaktykabajek/app/res/img/'.$row['avatar'].'.jpg)">
+						<div class="list-card-avatar" style="background: url('.APP_RES.'img/'.$row['avatar'].'.jpg)">
 						</div>
 					</section>
 					<section class="watch-list-card-content-box">

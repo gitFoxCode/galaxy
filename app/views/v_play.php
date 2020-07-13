@@ -271,7 +271,7 @@ function deleteComment(e){
 	 		document.querySelector('.comments-box-c').innerHTML = this.responseText;
 	 	}
 	 };
-	 xmlhttp.open("GET","http://localhost/galaktykabajek/app/action/a_delete_comment.php?id="+comment_id+'&e_id='+e_id+'&s_id='+s_id,true);
+	 xmlhttp.open("GET",`http://${window.location.hostname}/app/action/a_delete_comment.php?id=`+comment_id+'&e_id='+e_id+'&s_id='+s_id,true);
 	 console.log('?id='+comment_id+'&e_id='+e_id+'&s_id='+s_id);
 	 
 

@@ -1,7 +1,7 @@
 	<header>
 		<nav class="nav">
 			<div class="logo-box">
-				<img src="http://localhost/galaktykabajek/app/res/icons/logo.png" alt="GalaktykaBajek" class="nav-logo">
+				<img src="<?=APP_RES?>icons/logo.png" alt="GalaktykaBajek" class="nav-logo">
 				<h1 class="nav-logotype">
 					<span class="logotype-line">Galaktyka</span>Bajek
 				</h1>

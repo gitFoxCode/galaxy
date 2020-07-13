@@ -14,9 +14,9 @@ function search(){
 		}
 	};
 	if(name){
-		xmlhttp.open("GET","http://localhost/galaktykabajek/app/action/a_"+input.id+".php?q="+value+"&name="+name,true);
+		xmlhttp.open("GET",`http://${window.location.hostname}/app/action/a_`+input.id+".php?q="+value+"&name="+name,true);
 	}else{
-		xmlhttp.open("GET","http://localhost/galaktykabajek/app/action/a_"+input.id+".php?q="+value,true);
+		xmlhttp.open("GET",`http://${window.location.hostname}/app/action/a_`+input.id+".php?q="+value,true);
 	}
 
 	xmlhttp.send();

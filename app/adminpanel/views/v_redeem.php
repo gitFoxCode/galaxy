@@ -43,7 +43,7 @@
 			}
 		};
 
-		xmlhttp.open("GET","http://localhost/galaktykabajek/app/adminpanel/action/a_search.php?d="+database+"&q="+value,true);
+		xmlhttp.open("GET","<?= SITE_PATH ?>app/adminpanel/action/a_search.php?d="+database+"&q="+value,true);
 
 		xmlhttp.send();
 	}

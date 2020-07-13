@@ -46,7 +46,7 @@
 			}
 		};
 
-		xmlhttp.open("POST","http://localhost/galaktykabajek/app/adminpanel/action/a_generateCodes.php",true);
+		xmlhttp.open("POST","<?= SITE_PATH ?>app/adminpanel/action/a_generateCodes.php",true);
 		xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 		xmlhttp.send(`code=${code}&time=${time}&count=${count}`);
 	}
